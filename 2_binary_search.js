@@ -1,16 +1,16 @@
-const array = [0, 1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11, 13, 15, 14]
+const array = [1,2,3,4,6,7,8,9,10,12,13,14,15,16];
 let count = 0
 
 function binarySearch(array, item) {
     let start = 0
     let end = array.length
-    let meddle = 0
+    let middle;
     let found = false
     let position = -1
     while (found === false && start <= end) {
         count += 1;
-        middle = Math.floor(start + end) / 2;
-        if (array[meddle] === item) {
+        middle = Math.floor((start + end) / 2);
+        if (array[middle] === item) {
             found = true
             position = middle
             return position
