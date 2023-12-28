@@ -8,7 +8,7 @@ const factorial = (n) =>{
     res = n * factorial(n -1)
     return res
 }
-console.log(factorial(6))
+// console.log(factorial(6))
 
 function fac2(n){
     let res = 1
@@ -26,8 +26,8 @@ const fibonachi = (n) => {
     if (n === 1 || n === 2){
         return 1
     }
-    console.log(n)
+    // console.log(n)
     return fibonachi(n-1) + fibonachi(n-2)
 }
-// console.log(fibonachi(6))
+console.log(fibonachi(36))
 
