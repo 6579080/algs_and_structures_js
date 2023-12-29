@@ -24,8 +24,8 @@ function quickSort(array) {
 }
 
 
-// console.log(quickSort(arr))
-// console.log(count)
+console.log(quickSort(arr))
+console.log(count)
 
 function recursiveBinarySearch(array, item, start, end) {
     let middle = Math.floor((start + end) / 2);
@@ -41,8 +41,8 @@ function recursiveBinarySearch(array, item, start, end) {
     }
 }
 
-console.log(recursiveBinarySearch(arr2, 9, 0, arr.length))
-console.log(count)
+// console.log(recursiveBinarySearch(arr2, 9, 0, arr.length))
+// console.log(count)
 
 
 
