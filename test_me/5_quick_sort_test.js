@@ -5,22 +5,22 @@ function quickSort(array) {
     if (array.length <= 1) {
         return array
     }
-    let pivotIndex = Math.floor(array.length / 2)
-    let pivot = array[pivotIndex]
-    let less = []
-    let greater = []
+    let middleIndex = Math.floor(array.length / 2)
+    let less = [];
+    let great = [];
+    let middle = array[middleIndex]
     for (let i = 0; i < array.length; i++) {
         count += 1
-        if (i === pivotIndex)
+        if (i === middleIndex) {
             continue
-        if (array[i] < pivot) {
-            less.push(array[i])
-        } else {
-            greater.push(array[i])
         }
-
+        if (array[i] > middle) {
+            great.push(array[i])
+        } else {
+            less.push(array[i])
+        }
     }
-    return [...quickSort(less), pivot, ...quickSort(greater)]
+    return [...quickSort(less), middle, ...quickSort(great)]
 }
 
 
